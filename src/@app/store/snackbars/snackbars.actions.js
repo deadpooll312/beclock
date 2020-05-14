@@ -17,7 +17,8 @@ class SnackbarsActions {
 }
 
 SnackbarsActions = decorate(SnackbarsActions, {
-    handleNewSnackbar: action
+    handleNewSnackbar: action,
+    handleClearSnackbar: action
 });
 
 export {

@@ -1,0 +1,10 @@
+.main-container {
+  display: flex;
+
+  & .content {
+    width: 100%;
+    @media screen and (min-width: 960px) {
+      width: calc(100% - 240px);
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {inject, observer} from "mobx-react";
 
 import {
     Typography,
@@ -7,8 +8,8 @@ import {
 } from '@material-ui/core';
 
 
-const HomePage = React.memo(
-    props => {
+const HomePage = inject('store')(observer(
+    ({store, props}) => {
 
         return (
             <Container maxWidth="lg">
@@ -26,6 +27,6 @@ const HomePage = React.memo(
             </Container>
         );
     }
-);
+));
 
 export default HomePage;
