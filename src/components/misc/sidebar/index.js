@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Menu from './menu';
+import Menu from './SidebarMenu';
 
 import {
     Drawer,

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Sidebar from "../sidebar";
+import { Sidebar } from "../../../components";
 
 
 const RouteRenderer = React.memo(
